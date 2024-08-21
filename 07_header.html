@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabla de Precios</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        .pricing-container {
+            display: flex;
+            gap: 20px;
+        }
+        .pricing-card {
+            background-color: white;
+            border-radius: 8px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 200px;
+        }
+        .pricing-card.enterprise {
+            background-color: #4a5568;
+            color: white;
+        }
+        h2 {
+            margin-top: 0;
+        }
+        .price {
+            font-size: 24px;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+        .feature {
+            margin: 5px 0;
+            font-size: 14px;
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #3498db;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="pricing-container">
+        <div class="pricing-card">
+            <h2>Free</h2>
+            <div class="price">$0/mo</div>
+            <a href="#" class="btn">Sign up for free</a>
+        </div>
+        <div class="pricing-card">
+            <h2>Pro</h2>
+            <div class="price">$15/mo</div>
+            <a href="#" class="btn">Get started</a>
+        </div>
+        <div class="pricing-card enterprise">
+            <h2>Enterprise</h2>
+            <div class="price">$29/mo</div>
+            <div class="feature">30 users included</div>
+            <div class="feature">15 GB of storage</div>
+            <div class="feature">Phone and email support</div>
+            <a href="#" class="btn">Contact us</a>
+        </div>
+    </div>
+</body>
+</html>
